@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="Galerie/banner.jpg" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>ODPADY-JIH s.r.o.</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu -->
+  <div class="header">
+    <div class="logo">ODPADY-JIH s.r.o.</div>
+    <div class="header-right">
+      <a class="active" href="index.html">Úvod</a>
+      <div class="dropdown">
+        <button class="dropbtn">Sběrné dvory
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div>
+        <a href="index.html">Doprava</a>
+        <a href="index.html">Dotace</a>
+        <a href="index.html">Reference</a>
+        <a href="index.html">Kontakt</a>
+  </div>
+</div>
+    <!-- Menu -->
+    <!-- Banner -->
+    <div class="w3-content w3-display-container" style="width:100%">
+  <img class="mySlides" src="Galerie/banner.jpg" style="width:100%">
+  <img class="mySlides" src="Galerie/ruze.jpg" style="width:100%">
+  <img class="mySlides" src="Galerie/lilie.jpg" style="width:100%">
+  <img class="mySlides" src="Galerie/orchidea.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+    <!-- Banner -->
